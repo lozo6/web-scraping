@@ -18,5 +18,7 @@ for i in details:
     det = i.text
     output_details.append(det)
 
+# new_page = rq.get('')
+
 df = pd.DataFrame({'date_posted': output_job,'job_title': output_details,})
 df.to_csv('data/pythonJobPostings.csv')
