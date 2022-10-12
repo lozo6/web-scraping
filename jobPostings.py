@@ -6,13 +6,7 @@ page = rq.get('https://realpython.github.io/fake-jobs/')
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
-# print(soup.prettify())
-
-def remove_spaces(text):
-    text = text.strip() # removes empty space on either side of text
-    text = text.replace('\n', '') # removes empty lines
-    text = text.replace(' ', '') # removes empty spaces
-    return text
+print(soup.prettify())
 
 jobTitles = soup.find_all('h2', class_='title is-5')
 output_jobTitles = []
