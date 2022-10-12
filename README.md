@@ -23,6 +23,8 @@ Use `soup = BeautifulSoup(page.text, 'html.parser')` to activate the BeautifulSo
 
 First scan through html to see which data is able to be extracted, sometimes data is not available to be directly extracted and would need to loop through in order to extract proper data; please see .py files for more information
 
+Using html tags and class, use `soup.findall()` to extract necessary information
+
 Create an empty list for all data available and append data when extracting
 
 After making necessary lists, create a DataFrame using pandas package and create new .csv file
