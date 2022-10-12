@@ -21,7 +21,7 @@ Use requests package to get website data
 
 Use `soup = BeautifulSoup(page.text, 'html.parser')` to activate the BeautifulSoup4 package
 
-First scan through html to see which data is able to be extracted, sometimes data is not available to be directly extracted and would need to loop through in order to extract proper data; please see .py files for more information
+First scan through html using `print(soup.prettify())` to see which data is able to be extracted, sometimes data is not available to be directly extracted and would need to loop through in order to extract proper data; please see .py files for more information
 
 Using html tags and class, use `soup.findall()` to extract necessary information
 

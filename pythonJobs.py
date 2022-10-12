@@ -6,6 +6,8 @@ page = rq.get('https://pythonjobs.github.io')
 
 soup = BeautifulSoup(page.text, 'html.parser')
 
+print(soup.prettify())
+
 output_job = []
 jobListings = soup.find_all('div', class_='job')
 for i in jobListings:
