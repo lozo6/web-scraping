@@ -23,4 +23,4 @@ for i in details:
 # new_page = rq.get('')
 
 df = pd.DataFrame({'date_posted': output_job,'job_title': output_details,})
-df.to_csv('data/pythonJobPostings.csv')
+df.to_csv('practice/pythonJobPostings.csv')

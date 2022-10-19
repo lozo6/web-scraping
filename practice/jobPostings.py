@@ -31,4 +31,4 @@ for i in location:
     output_location.append(location)
 
 df = pd.DataFrame({'date_posted': output_dateTime,'job_title': output_jobTitles, 'location': output_location})
-df.to_csv('data/job_postings.csv')
+df.to_csv('practice/job_postings.csv')
